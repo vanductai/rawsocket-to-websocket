@@ -4,11 +4,14 @@ These two PHP scripts would help transfer messages from raw socket clients to we
 # Usage situation
 You have some information within your application/software that you want to publish to your audiences on websites. The best case is that your application can start a web-socket connection. However, most of application does not support this protocol but raw-socket. That's why this bridge exists to solve.
 
-RAW-SOCKET SERVER / act as a web-socket client -------> WEB-SOCKET SERVER -------> WEB-SOCKET CLIENT(s)  
+```
+  RAW-SOCKET SERVER  
+(as a web-socket client) -------> WEB-SOCKET SERVER -------> WEB-SOCKET CLIENT(s)  
       ^  
       |  
       |  
 RAW-SOCKET CLIENT(s)
+```
 
 # How to start
 Start servers in developing mode with terminal to see debug messages (if needed):
