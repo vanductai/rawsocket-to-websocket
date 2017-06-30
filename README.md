@@ -2,33 +2,24 @@
 These two PHP scripts would help transfer messages from raw socket clients to web socket clients (through 2 socket servers).
 
 # How to start
-Start servers in developing mode:
+Start servers in developing mode with terminal to see debug messages (if needed):
 ```
 php -q rawsocket.php  
 php -q websocket.php
 ```
 
-Start servers in background:
+Start servers in background with defaul nohup.out at current directory:
 ```
 nohup php -q rawsocket.php &  
 nohup php -q websocket.php &
 ```
 
+Start servers in background without output (nohup.out):
+```
+nohup php -q rawsocket.php >/dev/null 2>&1 &  
+nohup php -q websocket.php >/dev/null 2>&1 &
+```
+
 # Default values
-The raw-socket server start with port 9000.  
+The raw-socket server start with port 9000.
 The web-socket server start with port 9001.
-
-# Sameple code
-```
-if (isAwesome){
-  return true
-}
-```
-
-And if you'd like to use syntax highlighting, include the language:
-
-```javascript
-if (isAwesome){
-  return true
-}
-```
